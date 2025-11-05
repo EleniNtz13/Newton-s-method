@@ -1,0 +1,122 @@
+import sympy as sp
+import numpy as np
+
+# Message to the user: explanation of how Newton's method works
+# Newton's method is one of the most powerful and efficient techniques for solving optimization problems.
+# It requires two key computations: the gradient and the Hessian (matrix of second derivatives).
+# The gradient is a vector indicating the direction of the steepest increase of the function.
+# In Newton’s method, the gradient indicates where the function increases or decreases faster.
+# However, the gradient alone only provides the direction of change, not how “steep” the change is.
+# This is where the Hessian comes in: the Hessian matrix contains the second derivatives of the function.
+# Second derivatives reveal the curvature of the function and help us understand its behavior near a point.
+# Specifically:
+#   - If the Hessian matrix is positive definite (all principal minors positive), the function has a local minimum.
+#   - If the Hessian matrix is negative definite (all principal minors negative), the function has a local maximum.
+#   - If the Hessian has both positive and negative elements, the point is a saddle point.
+# The determinant of the Hessian is crucial because it shows whether the matrix is invertible.
+# If the determinant is zero, the Hessian is not invertible, and we cannot continue Newton’s method
+# since the inverse of the Hessian is required for the update step.
+
+# Therefore, Newton’s method uses:
+# 1) the gradient to determine the optimization direction,
+# 2) the Hessian to understand curvature, and
+# 3) the Hessian determinant to ensure invertibility and fast convergence.
+
+# Start of code
+# Introductory message
+print("This algorithm implements Newton's method for two variables.")
+print()
+
+# Variable definition
+x, y = sp.symbols('x y')
+
+# Function input from the user
+func_str = input("Enter the function f(x, y): ")
+f = sp.sympify(func_str)
+
+# Compute gradient (first derivatives) and Hessian (second derivatives matrix)
+grad_f = [sp.diff(f, var) for var in (x, y)]
+hessian_f = sp.hessian(f, (x, y))
+
+# Get initial point from the user
+x0 = float(input("x0 = "))
+y0 = float(input("y0 = "))
+xn = np.array([x0, y0], dtype='float64')
+
+# Initialize control parameters
+max_iter = 100   # Maximum number of iterations
+epsilon = 1e-6   # Convergence tolerance
+iteration_count = 0  # Iteration counter
+converged = False    # Boolean flag for convergence
+
+# Display initial information
+f_xy0 = f.subs({x: x0, y: y0})
+print(f"\nValue of f(x, y) = {f} at point ({x0}, {y0}) is: f(x0, y0) = {f_xy0}")
+print(f"Gradient: {[str(g) for g in grad_f]}")
+print("Hessian:")
+sp.pprint(hessian_f)
+
+for i in range(max_iter):
+    iteration_count += 1
+
+    # Compute gradient and Hessian values at the current point
+    grad_val = np.array([g.subs({x: xn[0], y: xn[1]}) for g in grad_f], dtype='float64')
+    hessian_val = np.array(hessian_f.subs({x: xn[0], y: xn[1]})).astype(np.float64)
+    det_hessian = np.linalg.det(hessian_val)
+
+    # If the Hessian is not invertible, stop the algorithm
+    if det_hessian == 0:
+        print(f"\n❌ The Hessian matrix at point {xn} is NOT invertible.")
+        print("🔍 Hessian determinant:", det_hessian)
+        print("🧠 Cannot proceed without the inverse.")
+        break
+
+    # Solve H * delta = grad to find the correction vector
+    delta = np.linalg.solve(hessian_val, grad_val)
+    xn_new = xn - delta
+
+    # Display intermediate results
+    print(f"\nStep {iteration_count}:")
+    print(f"  Point: {xn}")
+    print(f"  Gradient: {grad_val}")
+    print(f"  Hessian:\n{hessian_val}")
+    print(f"  Hessian determinant: {det_hessian}")
+    print(f"  Correction: {delta}")
+    print(f"  New point: {xn_new}")
+
+    # Convergence check
+    if np.linalg.norm(xn_new - xn) < epsilon:
+        xn = xn_new
+        converged = True
+        print("\n✅ Convergence achieved.")
+        break
+
+    xn = xn_new
+
+# Display final point and total iterations
+print(f"\n📍 Final point: x = {xn[0]}, y = {xn[1]}")
+print(f"🔢 Total iterations: {iteration_count}")
+
+# Additional evaluation
+hess_final = sp.Matrix(hessian_f.subs({x: xn[0], y: xn[1]}))
+det_final = hess_final.det()
+f_xx_final = sp.diff(f, x, x).subs({x: xn[0], y: xn[1]})
+
+print(f"\nDeterminant at final point: det(H) = {det_final}")
+print(f"f_xx at final point: {f_xx_final}")
+
+# Determine type of critical point
+if det_final > 0 and f_xx_final > 0:
+    print("➡️ The point is a **local minimum**.")
+elif det_final > 0 and f_xx_final < 0:
+    print("⬅️ The point is a **local maximum**.")
+elif det_final < 0:
+    print("↔️ The point is a **saddle point**.")
+else:
+    print("⚠️ Determinant is 0 — inconclusive result.")
+
+# If method did not converge
+if not converged:
+    print("❗ The method did not converge within the iteration limit.")
+
+# End of code
