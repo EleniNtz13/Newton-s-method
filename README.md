@@ -21,7 +21,7 @@ The algorithm:
 - Install numpy
 
 ## Tool used 🧠
-- ChatGPT Tool
+- ChatGPT AI Tool
 
 ## What I learned 🎯
 - Symbolic differentiation and Hessian computation with SymPy
