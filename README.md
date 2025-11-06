@@ -1,5 +1,4 @@
 # Newton's Method for Two Variables (Python)
-
 This project implements **Newton's Method** for optimization of functions with two variables using Python.
 
 It calculates:
