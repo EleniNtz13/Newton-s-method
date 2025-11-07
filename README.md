@@ -14,12 +14,13 @@ It calculates:
 ## How it works 💡
 Newton's method is an efficient optimization algorithm that uses both the gradient and Hessian of a function to find critical points, where gradient = 0.
 Starting from a point 
-the numerical update is done with:
+the numerical update is done with: xn+1​=xn​−δ
 H = Hessian (matrix of second derivatives)
 
 ∇f = gradient (vector of first derivatives)
 
-It is the correction vector:
+Ερμηνεία του 𝛿
+It is the correction vector: δ=H−1⋅∇f
 
 It defines how much to move and in which direction.
 
