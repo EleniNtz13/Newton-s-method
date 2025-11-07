@@ -2,8 +2,9 @@
 This project implements **Newton's Method** for optimization of functions with two variables using Python.
 
 It calculates:
-- The **gradient** (first derivatives)
-- The **Hessian matrix** (second derivatives)
+- The **gradient** (first derivatives: ∇f = [∂f/∂x​,∂f/∂y}​
+- The **Hessian matrix** (second derivatives: Η = [∂^2f/∂x^2  ∂^2f/​​∂x∂y  ∂^2f/​∂y∂x  ∂^2f/​∂y2​​] <img width="253" height="108" alt="image" src="https://github.com/user-attachments/assets/d5597dbd-b8c2-42f2-a642-31ce1eef4fe3" />
+
 - The **determinant** of the Hessian (for checking invertibility)
 - And automatically determines whether the result is a **local minimum**, **local maximum**, or **saddle point**
 
