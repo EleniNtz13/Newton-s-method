@@ -12,7 +12,16 @@ It calculates:
 - And automatically determines whether the result is a **local minimum**, **local maximum**, or **saddle point**
 
 ## How it works 💡
-Newton's method is an efficient optimization algorithm that uses both the gradient and Hessian of a function to find critical points.
+Newton's method is an efficient optimization algorithm that uses both the gradient and Hessian of a function to find critical points, where gradient = 0.
+Starting from a point 
+the numerical update is done with:
+H = Hessian (matrix of second derivatives)
+
+∇f = gradient (vector of first derivatives)
+
+It is the correction vector:
+
+It defines how much to move and in which direction.
 
 The algorithm:
 1. Takes a function f(x, y) as input
