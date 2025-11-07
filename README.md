@@ -13,7 +13,7 @@ Newton's method is an efficient optimization algorithm that uses both the gradie
 The algorithm:
 1. Takes a function f(x, y) as input
 2. Computes the gradient and Hessian symbolically using **SymPy**
-3. Iteratively updates the variables using \( x_{n+1} = x_n - H^{-1} \nabla f(x_n) \)
+3. Iteratively updates the variables using \( x_{n+1} = x_n - H^{-1} * ∇f(x_n) \) 
 4. Stops when convergence is achieved or when the Hessian is not invertible
 
 ## How to run it 🚀
