@@ -3,7 +3,10 @@ This project implements **Newton's Method** for optimization of functions with t
 
 It calculates:
 - The **gradient** (first derivatives: ∇f = [∂f/∂x​,∂f/∂y}​
-- The **Hessian matrix** (second derivatives: Η = [∂^2f/∂x^2  ∂^2f/​​∂x∂y  ∂^2f/​∂y∂x  ∂^2f/​∂y2​​] <img width="253" height="108" alt="image" src="https://github.com/user-attachments/assets/d5597dbd-b8c2-42f2-a642-31ce1eef4fe3" />
+  <img width="177" height="81" alt="image" src="https://github.com/user-attachments/assets/eba88be9-1062-48fa-b058-4395ddf02305" />
+
+- The **Hessian matrix** (second derivatives)
+  <img width="202" height="91" alt="image" src="https://github.com/user-attachments/assets/fbedd6da-bee4-480c-8685-516b6319eca9" />
 
 - The **determinant** of the Hessian (for checking invertibility)
 - And automatically determines whether the result is a **local minimum**, **local maximum**, or **saddle point**
