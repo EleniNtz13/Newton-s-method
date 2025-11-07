@@ -24,7 +24,8 @@ It is the correction vector: δ=H−1⋅∇f
 
 It defines how much to move and in which direction.
 
-![Uploading image.png…]()
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/74673bc1-f649-4962-accd-e3c094611bcd" />
+
 
 The algorithm:
 1. Takes a function f(x, y) as input
