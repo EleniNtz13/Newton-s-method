@@ -24,6 +24,8 @@ It is the correction vector: δ=H−1⋅∇f
 
 It defines how much to move and in which direction.
 
+![Uploading image.png…]()
+
 The algorithm:
 1. Takes a function f(x, y) as input
 2. Computes the gradient and Hessian symbolically using **SymPy**
