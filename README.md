@@ -113,7 +113,7 @@ It determines how far and in which direction to move at each iteration.
 
 ## Algorithm Description
 
-1. Takes a function $ f(x, y) $ as input  
+1. Takes a function $ f(x, y) $ as input  f(x,y)
 2. Computes the gradient and Hessian symbolically using **SymPy**  
 3. Iteratively updates the variables according to:
 
