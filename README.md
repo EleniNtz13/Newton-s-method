@@ -80,7 +80,7 @@ $$
 \mathbf{x}_{n+1} = \mathbf{x}_n - \delta
 $$
 
-where the correction vector $\delta$ is defined as:
+where, the correction vector $\delta$ is defined as:
 
 $$
 \delta = H^{-1} \cdot \nabla f
