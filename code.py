@@ -16,7 +16,7 @@ f = sp.sympify(func_str) # Using SymPy to convert a string representation of a m
 grad_f = [sp.diff(f, var) for var in (x, y)]
 hessian_f = sp.hessian(f, (x, y))
 
-# Get initial point from the user
+# Get initial point (x0,y0) from the user
 x0 = float(input("x0 = "))
 y0 = float(input("y0 = "))
 xn = np.array([x0, y0], dtype='float64') # Store initial point as a numpy array of type float64
@@ -28,11 +28,18 @@ iteration_count = 0  # Iteration counter
 converged = False    # Boolean flag for convergence
 
 # Display initial information
-f_xy0 = f.subs({x: x0, y: y0})
-print(f"\nValue of f(x, y) = {f} at point ({x0}, {y0}) is: f(x0, y0) = {f_xy0}")
-print(f"Gradient: {[str(g) for g in grad_f]}")
+f_xy0 = f.subs({x: x0, y: y0}) # f: is a symbolic expression (e.g., x**2 + y**2), 
+                               # subs(): replaces the symbolic variables x and y with the numeric values x0 and y0
+                               # f_xy0 now holds the evaluated expression at that point
+
+print(f"\nValue of f(x, y) = {f} at point ({x0}, {y0}) is: f(x0, y0) = {f_xy0}") # Prints the original function and its evaluated value at the point (x0, y0)
+
+print(f"Gradient: {[str(g) for g in grad_f]}") # Prints the gradient vector of the function f, 
+                                               # grad_f: is expected to be a list of partial derivatives like [∂f/∂x, ∂f/∂y]
+                                               # str(g): converts each symbolic derivative to a readable string
 print("Hessian:")
-sp.pprint(hessian_f)
+sp.pprint(hessian_f) # hessian_f: is assumed to be a SymPy Matrix object containing second derivatives
+                     # sp.pprint(...): formats and prints it nicely in the console, showing it like a true matrix rather than a flat list
 
 for i in range(max_iter):
     iteration_count += 1
@@ -106,6 +113,7 @@ if not converged:
     print("❗ The method did not converge within the iteration limit.")
 
 # End of code
+
 
 
 
