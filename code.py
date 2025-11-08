@@ -1,9 +1,6 @@
 import sympy as sp
 import numpy as np
 
-# Message to the user: explanation of how Newton's method works
-# Newton's method is one of the most powerful and efficient techniques for solving optimization problems.
-# It requires two key computations: the gradient and the Hessian (matrix of second derivatives).
 # The gradient is a vector indicating the direction of the steepest increase of the function.
 # In Newton’s method, the gradient indicates where the function increases or decreases faster.
 # However, the gradient alone only provides the direction of change, not how “steep” the change is.
@@ -120,3 +117,4 @@ if not converged:
     print("❗ The method did not converge within the iteration limit.")
 
 # End of code
+
