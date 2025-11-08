@@ -19,7 +19,7 @@ hessian_f = sp.hessian(f, (x, y))
 # Get initial point from the user
 x0 = float(input("x0 = "))
 y0 = float(input("y0 = "))
-xn = np.array([x0, y0], dtype='float64')
+xn = np.array([x0, y0], dtype='float64') # Store initial point as a numpy array of type float64
 
 # Initialize control parameters
 max_iter = 100   # Maximum number of iterations
@@ -106,6 +106,7 @@ if not converged:
     print("❗ The method did not converge within the iteration limit.")
 
 # End of code
+
 
 
 
