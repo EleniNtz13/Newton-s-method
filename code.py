@@ -114,6 +114,3 @@ if not converged:
     print("❗ The method did not converge within the iteration limit.")
 
 # End of code
-
-
-
