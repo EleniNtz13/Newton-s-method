@@ -1,12 +1,6 @@
 import sympy as sp
 import numpy as np
 
-
-# Therefore, Newton’s method uses:
-# 1) the gradient to determine the optimization direction,
-# 2) the Hessian to understand curvature, and
-# 3) the Hessian determinant to ensure invertibility and fast convergence.
-
 # Start of code
 # Introductory message
 print("This algorithm implements Newton's method for two variables.")
@@ -104,8 +98,7 @@ elif det_final < 0:
     print("↔️ The point is a **saddle point**.")
 
 # The determinant of the Hessian is crucial because it shows whether the matrix is invertible.
-# If the determinant is zero, the Hessian is not invertible, and we cannot continue Newton’s method
-# since the inverse of the Hessian is required for the update step.
+# If the determinant is zero, the Hessian is not invertible, and we cannot continue Newton’s method since the inverse of the Hessian is required for the update step.
 else:
     print("⚠️ Determinant is 0 — inconclusive result.")
 
@@ -114,3 +107,4 @@ if not converged:
     print("❗ The method did not converge within the iteration limit.")
 
 # End of code
+
