@@ -1,8 +1,8 @@
-# Newton's Method for Two Variables (Python) 🧮
+# Newton's Method for Two Variables (Python) 📈💻
 
 This project implements **Newton's Method** for optimizing functions with two variables using Python.
 
-## What It Calculates
+## What It Calculates 🧮
 
 - The **gradient** (vector of first derivatives)
 
