@@ -4,6 +4,48 @@ This project implements **Newton's Method** for optimizing functions with two va
 
 ## What It Calculates
 
+- The **gradient** (vector of first derivatives)
+
+  
+$$
+\nabla f(x, y) = \begin{bmatrix}
+  \frac{\partial f}{\partial x} \\
+  \frac{\partial f}{\partial y}
+  \end{bmatrix}
+$$
+
+
+- The **Hessian matrix** (matrix of second derivatives)
+
+  
+$$
+H(x, y) = \begin{bmatrix}
+  \frac{\partial^2 f}{\partial x^2} & \frac{\partial^2 f}{\partial x \partial y} \\
+  \frac{\partial^2 f}{\partial y \partial x} & \frac{\partial^2 f}{\partial y^2}
+  \end{bmatrix}
+$$
+
+
+- The **determinant** of the Hessian matrix to check invertibility
+
+  
+$$
+\det(H) = \left( \frac{\partial^2 f}{\partial x^2} \cdot \frac{\partial^2 f}{\partial y^2} \right) - \left( \frac{\partial^2 f}{\partial x \partial y} \cdot \frac{\partial^2 f}{\partial y \partial x} \right)
+$$
+
+
+- Automatic classification of the critical point as a **local minimum**, **local maximum**, or **saddle point**
+
+---
+
+--
+
+# Newton's Method for Two Variables (Python) 🧮
+
+This project implements **Newton's Method** for optimizing functions with two variables using Python.
+
+## What It Calculates
+
 - The **gradient** (vector of first derivatives)  
   ![Gradient](https://github.com/user-attachments/assets/eba88be9-1062-48fa-b058-4395ddf02305)
 
