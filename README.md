@@ -42,10 +42,10 @@ $$
 - Automatic classification of the critical point as a **local minimum**, **local maximum**, or **saddle point**
 
 
-#### Therefore, Newton’s method uses:
- 1) the gradient to determine the optimization direction,
- 2) the Hessian to understand curvature, and
- 3) the Hessian determinant to ensure invertibility and fast convergence.
+#### Therefore, Newton’s method uses: 😉
+ 1) The Gradient to determine the optimization direction,
+ 2) The Hessian to understand curvature, and
+ 3) The Hessian determinant to ensure invertibility and fast convergence.
 
 ---
 
