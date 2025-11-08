@@ -52,7 +52,8 @@ $$
 
 Newton's method is an efficient optimization algorithm that uses both the gradient and the Hessian matrix of a function to find critical points where the gradient equals zero.
 
-<--Starting from a point $ \mathbf{x}_n $, the numerical update is performed as:
+<!--
+Starting from a point $ \mathbf{x}_n $, the numerical update is performed as:
 
 
 $$
@@ -63,7 +64,8 @@ $$
 where
 
 - $ H $ = Hessian matrix (matrix of second derivatives)  
-- $ \nabla f $ = gradient (vector of first derivatives) -->
+- $ \nabla f $ = gradient (vector of first derivatives) 
+-->
 
 ### Interpretation of $\delta$ 🤔
 
