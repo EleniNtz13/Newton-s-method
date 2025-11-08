@@ -41,7 +41,7 @@ $$
 
 - Automatic classification of the critical point as a **local minimum**, **local maximum**, or **saddle point**
 
--
+--
 
 #### Therefore, Newton’s method uses: 😉
  1) The Gradient to determine the optimization direction
