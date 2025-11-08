@@ -43,9 +43,9 @@ $$
 
 
 #### Therefore, Newton’s method uses: 😉
- 1) The Gradient to determine the optimization direction,
- 2) The Hessian to understand curvature, and
- 3) The Hessian determinant to ensure invertibility and fast convergence.
+ 1) The Gradient to determine the optimization direction
+ 2) The Hessian to understand curvature
+ 3) The Hessian determinant to ensure invertibility and fast convergence
 
 ---
 
