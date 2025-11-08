@@ -45,18 +45,20 @@ for i in range(max_iter): # Starts a loop that runs up to max_iter times
     iteration_count += 1 # Tracks how many iterations have occurred using iteration_count
 
     # Compute gradient and Hessian values at the current point
-    grad_val = np.array([g.subs({x: xn[0], y: xn[1]}) for g in grad_f], dtype='float64')
-    hessian_val = np.array(hessian_f.subs({x: xn[0], y: xn[1]})).astype(np.float64)
-    det_hessian = np.linalg.det(hessian_val)
+    grad_val = np.array([g.subs({x: xn[0], y: xn[1]}) for g in grad_f], dtype='float64') # Evaluates the gradient vector at the current point xn = [x0, y0]
+                                                                                         # grad_f: is a list of symbolic partial derivatives
+                                                                                         # subs(...): replaces symbolic variables with numeric values
+    hessian_val = np.array(hessian_f.subs({x: xn[0], y: xn[1]})).astype(np.float64) # Evaluates the Hessian matrix numerically at the current point
+    det_hessian = np.linalg.det(hessian_val) # Computes the determinant of the Hessian to check if it's invertible.
 
-    # If the Hessian is not invertible, stop the algorithm
+    # If the determinant is zero, the Hessian is not invertible, so the algorithm stops
     if det_hessian == 0:
         print(f"\n❌ The Hessian matrix at point {xn} is NOT invertible.")
         print("🔍 Hessian determinant:", det_hessian)
         print("🧠 Cannot proceed without the inverse.")
         break
 
-    # Solve H * delta = grad to find the correction vector
+    # Solve the system H * delta = grad to find the correction vector!!!!!!!!!!!!!!!!!!!
     delta = np.linalg.solve(hessian_val, grad_val)
     xn_new = xn - delta
 
@@ -113,6 +115,7 @@ if not converged:
     print("❗ The method did not converge within the iteration limit.")
 
 # End of code
+
 
 
 
