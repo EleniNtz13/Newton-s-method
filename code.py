@@ -41,8 +41,8 @@ print("Hessian:")
 sp.pprint(hessian_f) # hessian_f: is assumed to be a SymPy Matrix object containing second derivatives
                      # sp.pprint(...): formats and prints it nicely in the console, showing it like a true matrix rather than a flat list
 
-for i in range(max_iter):
-    iteration_count += 1
+for i in range(max_iter): # Starts a loop that runs up to max_iter times
+    iteration_count += 1 # Tracks how many iterations have occurred using iteration_count
 
     # Compute gradient and Hessian values at the current point
     grad_val = np.array([g.subs({x: xn[0], y: xn[1]}) for g in grad_f], dtype='float64')
@@ -113,6 +113,7 @@ if not converged:
     print("❗ The method did not converge within the iteration limit.")
 
 # End of code
+
 
 
 
