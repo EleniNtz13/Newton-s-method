@@ -55,7 +55,7 @@ where
 - $ H $ = Hessian matrix (matrix of second derivatives)  
 - $ \nabla f $ = gradient (vector of first derivatives)
 
-### Interpretation of $\delta$
+### Interpretation of $\delta$ 🤔
 
 The correction vector $\delta$ is defined as:
 
@@ -69,7 +69,7 @@ It determines how far and in which direction to move at each iteration.
 
 ---
 
-## Visual Comparison between Newton's Method and Gradient Descent
+## Visual Comparison between Newton's Method and Gradient Descent 📐🔍
 
 ![Newton vs Gradient Descent](https://github.com/user-attachments/assets/74673bc1-f649-4962-accd-e3c094611bcd)
 
