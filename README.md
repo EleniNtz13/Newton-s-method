@@ -56,7 +56,7 @@ The steps for solving Newton's method:
 
 1. Takes a function f(x, y) as input
 2. Computes the gradient and Hessian symbolically using **SymPy**
-   Starting from a point $ \mathbf{x}_n $, the numerical update is performed as:
+   Starting from a point $ \mathbf{x}_n\ $, the numerical update is performed as:
   
 4. Iteratively updates the variables according to:
 
