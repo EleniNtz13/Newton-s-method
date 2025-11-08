@@ -38,26 +38,6 @@ $$
 
 ---
 
---
-
-# Newton's Method for Two Variables (Python) 🧮
-
-This project implements **Newton's Method** for optimizing functions with two variables using Python.
-
-## What It Calculates
-
-- The **gradient** (vector of first derivatives)  
-  ![Gradient](https://github.com/user-attachments/assets/eba88be9-1062-48fa-b058-4395ddf02305)
-
-- The **Hessian matrix** (second derivatives)  
-  ![Hessian](https://github.com/user-attachments/assets/fbedd6da-bee4-480c-8685-516b6319eca9)
-
-- The **determinant** of the Hessian matrix to check invertibility
-
-- Automatic classification of the critical point as a **local minimum**, **local maximum**, or **saddle point**
-
----
-
 ## How Newton's Method Works 💡
 
 Newton's method is an efficient optimization algorithm that uses both the gradient and the Hessian matrix of a function to find critical points where the gradient equals zero.
