@@ -74,13 +74,13 @@ Newton's method is an efficient optimization algorithm that uses both the gradie
 
 ## Interpretation of $\delta$ 🤔
 
-The correction vector $\delta$ is defined as:
+The appropriate definition of the above type
 
 $$
 \mathbf{x}_{n+1} = \mathbf{x}_n - \delta
 $$
 
-where,
+where the correction vector $\delta$ is defined as:
 
 $$
 \delta = H^{-1} \cdot \nabla f
