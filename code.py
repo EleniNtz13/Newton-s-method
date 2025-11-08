@@ -1,5 +1,5 @@
-import sympy as sp
-import numpy as np
+import sympy as sp # SymPy is a Python library for symbolic computation -> it can manipulate mathematical expressions algebraically
+import numpy as np # NumPy is a Python library for numerical operations, especially with arrays and matrices
 
 # Start of code
 # Introductory message
@@ -11,7 +11,7 @@ x, y = sp.symbols('x y')
 
 # Function input from the user
 func_str = input("Enter the function f(x, y): ")
-f = sp.sympify(func_str)
+f = sp.sympify(func_str) # Using SymPy to convert a string representation of a mathematical expression into a symbolic expression
 
 # Compute gradient (first derivatives) and Hessian (second derivatives matrix)
 grad_f = [sp.diff(f, var) for var in (x, y)]
@@ -107,4 +107,5 @@ if not converged:
     print("❗ The method did not converge within the iteration limit.")
 
 # End of code
+
 
