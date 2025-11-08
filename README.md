@@ -53,7 +53,7 @@ $$
 Newton's method is an efficient optimization algorithm that uses both the gradient and the Hessian matrix of a function to find critical points where the gradient equals zero. The steps for solving Newton's method:
 
 1. Takes a function $$f(x,y)$$ as input
-2. Computes the gradient amd Hessian symbolically using **SymPy**
+2. Computes the gradient amd Hessian symbolically using sympy
 3. Starting from the initial point $$\mathbf{x}_n$$, the numerical update is performed as:
 
   $$
