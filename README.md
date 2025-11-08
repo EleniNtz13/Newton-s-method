@@ -75,7 +75,7 @@ It determines how far and in which direction to move at each iteration.
 
 ---
 
-## Algorithm Description
+## Algorithm Description 👀
 
 1. Takes a function $ f(x, y) $ as input
 2. Computes the gradient and Hessian symbolically using **SymPy**  
