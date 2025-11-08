@@ -69,11 +69,6 @@ where
 
 ---
 
-## Visual Comparison between Newton's Method and Gradient Descent 📐🔍
-
-![Newton vs Gradient Descent](https://github.com/user-attachments/assets/74673bc1-f649-4962-accd-e3c094611bcd)
-
----
 
 ## Algorithm Description 👀
 
@@ -102,6 +97,12 @@ $$
 
 It determines how far and in which direction to move at each iteration.
 
+
+---
+
+## Visual Comparison between Newton's Method and Gradient Descent 📐🔍
+
+![Newton vs Gradient Descent](https://github.com/user-attachments/assets/74673bc1-f649-4962-accd-e3c094611bcd)
 
 ---
 
