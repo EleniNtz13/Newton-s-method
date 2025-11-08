@@ -58,7 +58,7 @@ for i in range(max_iter): # Starts a loop that runs up to max_iter times
         print("🧠 Cannot proceed without the inverse.")
         break
 
-    # Solve the system H * delta = grad to find the correction vector!!!!!!!!!!!!!!!!!!!
+    # Solve the system $$H$$ * $$\delta$$ = \grad f$$ to find the correction vector!!!!!!!!!!!!!!!!!!!
     delta = np.linalg.solve(hessian_val, grad_val)
     xn_new = xn - delta
 
@@ -115,6 +115,7 @@ if not converged:
     print("❗ The method did not converge within the iteration limit.")
 
 # End of code
+
 
 
 
