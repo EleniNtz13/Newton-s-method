@@ -9,8 +9,7 @@ print()
 # Variable definition
 x, y = sp.symbols('x y')
 
-# Function input from the user
-func_str = input("Enter the function f(x, y): ")
+func_str = input("Enter the function f(x, y): ") # Function input from the user
 f = sp.sympify(func_str) # Using SymPy to convert a string representation of a mathematical expression into a symbolic expression
 
 # Compute gradient (first derivatives) and Hessian (second derivatives matrix)
@@ -107,5 +106,6 @@ if not converged:
     print("❗ The method did not converge within the iteration limit.")
 
 # End of code
+
 
 
