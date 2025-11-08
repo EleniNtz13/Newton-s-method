@@ -62,8 +62,7 @@ $$
 
 where
 
-- $ H $ H
-= Hessian matrix (matrix of second derivatives)  
+- $ H $ = Hessian matrix (matrix of second derivatives)  
 - $ \nabla f $ = gradient (vector of first derivatives)
 
 ### Interpretation of $\delta$ 🤔
