@@ -54,10 +54,9 @@ Newton's method is an efficient optimization algorithm that uses both the gradie
 
 1. Takes a function f(x,y) as input
 2. Computes the gradient, the Hessian and the inverse of Hessian symbolically using **SymPy**
+3. Starting from a point X_n, the numerical update is performed as:
 
-   Starting from a point X_n $$ \mathbf{x}_{n+1} $$, the numerical update is performed as: 
-
-$$
+  $$
   \mathbf{x}_{n+1} = \mathbf{x}_n - H^{-1} \cdot \nabla f
   $$
 
@@ -65,7 +64,8 @@ $$
 
 - $ H $ = Hessian matrix (matrix of second derivatives)  
 - $ \nabla f $ = gradient (vector of first derivatives) 
-3. Iteratively updates the variables according to:
+
+
    $$
 \mathbf{x}_{n+1} = \mathbf{x}_n - \delta
 $$
