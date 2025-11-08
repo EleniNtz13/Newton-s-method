@@ -66,7 +66,7 @@ Newton's method is an efficient optimization algorithm that uses both the gradie
 - $\nabla f$ = gradient (vector of first derivatives) 
 
 
-   $$
+$$
 \mathbf{x}_{n+1} = \mathbf{x}_n - \delta
 $$
 
