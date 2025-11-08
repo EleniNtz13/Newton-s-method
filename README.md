@@ -109,5 +109,3 @@ $$
 - Symbolic differentiation and Hessian computation using SymPy  
 - Matrix inversion and determinant checking with NumPy  
 - Convergence criteria in numerical optimization methods
-
-- 
