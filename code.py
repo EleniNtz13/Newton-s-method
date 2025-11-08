@@ -102,19 +102,18 @@ elif det_final > 0 and f_xx_final < 0:
 # If the Hessian has both positive and negative elements, the point is a saddle point.
 elif det_final < 0:
     print("↔️ The point is a **saddle point**.")
+
 # The determinant of the Hessian is crucial because it shows whether the matrix is invertible.
-else:
-    print("⚠️ Determinant is 0 — inconclusive result.")
-
-
-
 # If the determinant is zero, the Hessian is not invertible, and we cannot continue Newton’s method
 # since the inverse of the Hessian is required for the update step.
+else:
+    print("⚠️ Determinant is 0 — inconclusive result.")
 
 # If method did not converge
 if not converged:
     print("❗ The method did not converge within the iteration limit.")
 
 # End of code
+
 
 
