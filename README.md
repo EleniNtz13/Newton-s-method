@@ -4,8 +4,7 @@ This project implements **Newton's Method** for optimizing functions with two va
 
 ## What It Calculates 🧮
 
-- The **gradient** (vector of first derivatives)
-
+- The **gradient** (vector of first derivatives) is a vector indicating the direction of the steepest increase of the function. In Newton’s method, the gradient indicates where the function increases or decreases faster. 
   
 $$
 \nabla f(x, y) = \begin{bmatrix}
@@ -14,8 +13,9 @@ $$
   \end{bmatrix}
 $$
 
+However, the gradient alone only provides the direction of change, not how “steep” the change is. This is where the Hessian comes in...  
 
-- The **Hessian matrix** (matrix of second derivatives)
+- The **Hessian matrix** (matrix of second derivatives) contains the second derivatives of the function. Second derivatives reveal the curvature of the function and help us understand its behavior near a point.
 
   
 $$
