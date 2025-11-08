@@ -74,7 +74,7 @@ Newton's method is an efficient optimization algorithm that uses both the gradie
 
 ## Interpretation of $\delta$ 🤔
 
-The appropriate definition of the above type
+The appropriate definition of the above type is as:
 
 $$
 \mathbf{x}_{n+1} = \mathbf{x}_n - \delta
