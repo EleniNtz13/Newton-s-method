@@ -67,18 +67,6 @@ where
 - $ \nabla f $ = gradient (vector of first derivatives) 
 -->
 
-### Interpretation of $\delta$ 🤔
-
-The correction vector $\delta$ is defined as:
-
-
-$$
-\delta = H^{-1} \cdot \nabla f
-$$
-
-
-It determines how far and in which direction to move at each iteration.
-
 ---
 
 ## Visual Comparison between Newton's Method and Gradient Descent 📐🔍
@@ -100,6 +88,20 @@ $$
 
 
 4. Stops when convergence is reached or when the Hessian is not invertible
+
+
+Interpretation of $\delta$ 🤔
+
+The correction vector $\delta$ is defined as:
+
+
+$$
+\delta = H^{-1} \cdot \nabla f
+$$
+
+
+It determines how far and in which direction to move at each iteration.
+
 
 ---
 
