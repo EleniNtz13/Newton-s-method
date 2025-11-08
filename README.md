@@ -50,37 +50,26 @@ $$
 
 ## How Newton's Method Works 💡
 
-Newton's method is an efficient optimization algorithm that uses both the gradient and the Hessian matrix of a function to find critical points where the gradient equals zero.
+Newton's method is an efficient optimization algorithm that uses both the gradient and the Hessian matrix of a function to find critical points where the gradient equals zero. The steps for solving Newton's method:
 
-The steps for solving Newton's method:
-
-1. Takes a function f(x, y) as input
+1. Takes a function f(x,y) as input
 2. Computes the gradient and Hessian symbolically using **SymPy**
-   Starting from a point $$ \mathbf{x}_n $$, the numerical update is performed as:
-  
-4. Iteratively updates the variables according to:
-
-   
+   Starting from a point $$ \mathbf{x}_n $$, the numerical update is performed as: 
   $$
   \mathbf{x}_{n+1} = \mathbf{x}_n - H^{-1} \cdot \nabla f
   $$
 
-
-4. Stops when convergence is reached or when the Hessian is not invertible
-
-<!--
-
-
-$$
-\mathbf{x}_{n+1} = \mathbf{x}_n - \delta
-$$
-
-
-where
+  where
 
 - $ H $ = Hessian matrix (matrix of second derivatives)  
 - $ \nabla f $ = gradient (vector of first derivatives) 
--->
+3. Iteratively updates the variables according to:
+   $$
+\mathbf{x}_{n+1} = \mathbf{x}_n - \delta
+$$
+
+4. Stops when convergence is reached or when the Hessian is not invertible
+
 
 ---
 
