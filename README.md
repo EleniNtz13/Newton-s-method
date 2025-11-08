@@ -55,7 +55,8 @@ Newton's method is an efficient optimization algorithm that uses both the gradie
 1. Takes a function f(x,y) as input
 2. Computes the gradient, the Hessian and the inverse of Hessian symbolically using **SymPy**
 
-   Starting from a point $$ \mathbf{x}_n $$, the numerical update is performed as: 
+   Starting from a point $$
+  \mathbf{x}_{n+1} $$, the numerical update is performed as: 
 
 $$
   \mathbf{x}_{n+1} = \mathbf{x}_n - H^{-1} \cdot \nabla f
