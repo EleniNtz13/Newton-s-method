@@ -58,9 +58,8 @@ for i in range(max_iter): # Starts a loop that runs up to max_iter times
         print("🧠 Cannot proceed without the inverse.")
         break
 
-    # Solve the system $$H$$ * $$\delta$$ = \grad f$$ to find the correction vector!!!!!!!!!!!!!!!!!!!
-    delta = np.linalg.solve(hessian_val, grad_val)
-    xn_new = xn - delta
+    delta = np.linalg.solve(hessian_val, grad_val) # Solve the system H * delta = grad f to find the correction vector
+    xn_new = xn - delta # Updates the point: new point = current point − correction
 
     # Display intermediate results
     print(f"\nStep {iteration_count}:")
@@ -72,41 +71,43 @@ for i in range(max_iter): # Starts a loop that runs up to max_iter times
     print(f"  New point: {xn_new}")
 
     # Convergence check
+    # If the change is smaller than epsilon, the algorithm converges and exits the loop
     if np.linalg.norm(xn_new - xn) < epsilon:
         xn = xn_new
         converged = True
         print("\n✅ Convergence achieved.")
         break
 
-    xn = xn_new
+    xn = xn_new # If not converged, updates the point for the next iteration
 
-# Display final point and total iterations
+# Display final point and total number of iterations
 print(f"\n📍 Final point: x = {xn[0]}, y = {xn[1]}")
 print(f"🔢 Total iterations: {iteration_count}")
 
 # Additional evaluation
-hess_final = sp.Matrix(hessian_f.subs({x: xn[0], y: xn[1]}))
-det_final = hess_final.det()
-f_xx_final = sp.diff(f, x, x).subs({x: xn[0], y: xn[1]})
+hess_final = sp.Matrix(hessian_f.subs({x: xn[0], y: xn[1]})) # Creates a symbolic Hessian matrix at the final point
+det_final = hess_final.det() # Computes the determinant of the final Hessian
+f_xx_final = sp.diff(f, x, x).subs({x: xn[0], y: xn[1]}) # Computes the second partial derivative with respect to 𝑥 at the final point
 
-print(f"\nDeterminant at final point: det(H) = {det_final}")
-print(f"f_xx at final point: {f_xx_final}")
+# Prints the determinant and second derivative to help classify the critical point (e.g., minimum, maximum, saddle).
+print(f"\nDeterminant at final point: det(H) = {det_final}") # det_final: Determinant of the Hessian matrix at the final point
+print(f"f_xx at final point: {f_xx_final}") # f_xx_final: Second partial derivative of 𝑓 with respect to 𝑥, evaluated at the final point
 
 # Determine type of critical point
-# If the Hessian matrix is positive definite (all principal minors positive), the function has a local minimum.
+# If the Hessian matrix is positive definite (all principal minors positive), the function has a local minimum
 if det_final > 0 and f_xx_final > 0: 
     print("➡️ The point is a **local minimum**.")
 
-# If the Hessian matrix is negative definite (all principal minors negative), the function has a local maximum.    
+# If the Hessian matrix is negative definite (all principal minors negative), the function has a local maximum    
 elif det_final > 0 and f_xx_final < 0:
     print("⬅️ The point is a **local maximum**.")
     
-# If the Hessian has both positive and negative elements, the point is a saddle point.
+# If the Hessian has both positive and negative elements, the point is a saddle point
 elif det_final < 0:
     print("↔️ The point is a **saddle point**.")
 
-# The determinant of the Hessian is crucial because it shows whether the matrix is invertible.
-# If the determinant is zero, the Hessian is not invertible, and we cannot continue Newton’s method since the inverse of the Hessian is required for the update step.
+# The determinant of the Hessian is crucial because it shows whether the matrix is invertible
+# If the determinant is zero, the Hessian is not invertible, and we cannot continue Newton’s method since the inverse of the Hessian is required for the update step
 else:
     print("⚠️ Determinant is 0 — inconclusive result.")
 
@@ -115,11 +116,5 @@ if not converged:
     print("❗ The method did not converge within the iteration limit.")
 
 # End of code
-
-
-
-
-
-
 
 
