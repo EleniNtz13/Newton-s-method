@@ -62,7 +62,7 @@ Newton's method is an efficient optimization algorithm that uses both the gradie
 
   where,
 
-- $H$ = Hessian matrix (matrix of second derivatives)  
+- $H^-1$ = Hessian matrix (matrix of second derivatives)  
 - $\nabla f$ = gradient (vector of first derivatives) 
 
 
