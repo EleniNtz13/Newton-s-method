@@ -2,6 +2,7 @@
 
 This project implements **Newton's Method** for optimizing functions with two variables using Python.
 
+
 ## What It Calculates 🧮
 
 - The **gradient** (vector of first derivatives) is a vector indicating the direction of the steepest increase of the function. In Newton’s method, the gradient indicates where the function increases or decreases faster. 
