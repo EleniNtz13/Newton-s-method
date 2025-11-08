@@ -90,7 +90,7 @@ $$
 4. Stops when convergence is reached or when the Hessian is not invertible
 
 
-Interpretation of $\delta$ 🤔
+##Interpretation of $\delta$ 🤔
 
 The correction vector $\delta$ is defined as:
 
