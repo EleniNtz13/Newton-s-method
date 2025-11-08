@@ -1,18 +1,6 @@
 import sympy as sp
 import numpy as np
 
-# The gradient is a vector indicating the direction of the steepest increase of the function.
-# In Newton’s method, the gradient indicates where the function increases or decreases faster.
-# However, the gradient alone only provides the direction of change, not how “steep” the change is.
-# This is where the Hessian comes in: the Hessian matrix contains the second derivatives of the function.
-# Second derivatives reveal the curvature of the function and help us understand its behavior near a point.
-# Specifically:
-#   - If the Hessian matrix is positive definite (all principal minors positive), the function has a local minimum.
-#   - If the Hessian matrix is negative definite (all principal minors negative), the function has a local maximum.
-#   - If the Hessian has both positive and negative elements, the point is a saddle point.
-# The determinant of the Hessian is crucial because it shows whether the matrix is invertible.
-# If the determinant is zero, the Hessian is not invertible, and we cannot continue Newton’s method
-# since the inverse of the Hessian is required for the update step.
 
 # Therefore, Newton’s method uses:
 # 1) the gradient to determine the optimization direction,
@@ -103,18 +91,30 @@ print(f"\nDeterminant at final point: det(H) = {det_final}")
 print(f"f_xx at final point: {f_xx_final}")
 
 # Determine type of critical point
-if det_final > 0 and f_xx_final > 0:
+# If the Hessian matrix is positive definite (all principal minors positive), the function has a local minimum.
+if det_final > 0 and f_xx_final > 0: 
     print("➡️ The point is a **local minimum**.")
+
+# If the Hessian matrix is negative definite (all principal minors negative), the function has a local maximum.    
 elif det_final > 0 and f_xx_final < 0:
     print("⬅️ The point is a **local maximum**.")
+    
+# If the Hessian has both positive and negative elements, the point is a saddle point.
 elif det_final < 0:
     print("↔️ The point is a **saddle point**.")
+# The determinant of the Hessian is crucial because it shows whether the matrix is invertible.
 else:
     print("⚠️ Determinant is 0 — inconclusive result.")
+
+
+
+# If the determinant is zero, the Hessian is not invertible, and we cannot continue Newton’s method
+# since the inverse of the Hessian is required for the update step.
 
 # If method did not converge
 if not converged:
     print("❗ The method did not converge within the iteration limit.")
 
 # End of code
+
 
