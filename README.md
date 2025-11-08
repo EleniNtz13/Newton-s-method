@@ -1,4 +1,4 @@
-# Newton's Method for Two Variables (Python) 📈💻
+# Newton's Method for Two Variables (Python) 📈👩🏻‍💻
 
 This project implements **Newton's Method** for optimizing functions with two variables using Python.
 
@@ -110,7 +110,4 @@ $$
 - Matrix inversion and determinant checking with NumPy  
 - Convergence criteria in numerical optimization methods
 
----
-
-- Matrix inversion and determinant checks with NumPy
-- Convergence criteria for numerical optimization
+- 
