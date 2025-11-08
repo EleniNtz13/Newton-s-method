@@ -65,11 +65,6 @@ Newton's method is an efficient optimization algorithm that uses both the gradie
 - $H^-1$ = the inverse of the Hessian matrix (matrix of second derivatives)  
 - $\nabla f$ = gradient (vector of first derivatives) 
 
-
-$$
-\mathbf{x}_{n+1} = \mathbf{x}_n - \delta
-$$
-
 4. Stops when convergence is reached or when the Hessian is not invertible
 
 
@@ -81,6 +76,11 @@ $$
 
 The correction vector $\delta$ is defined as:
 
+$$
+\mathbf{x}_{n+1} = \mathbf{x}_n - \delta
+$$
+
+where,
 
 $$
 \delta = H^{-1} \cdot \nabla f
