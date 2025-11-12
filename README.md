@@ -92,7 +92,7 @@ It determines how far and in which direction to move at each iteration.
 
 ---
 
-### How to Run It (on PyCharm) 🚀
+### 🚀 How to Run It (on PyCharm) 
 
 - Install the `sympy` and `numpy` libraries  
 - Run the Python script implementing the algorithm
