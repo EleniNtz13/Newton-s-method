@@ -90,8 +90,6 @@ It determines how far and in which direction to move at each iteration.
 
 ![Newton vs Gradient Descent](https://github.com/user-attachments/assets/74673bc1-f649-4962-accd-e3c094611bcd)
 
-<img width="1536" height="1024" alt="1" src="https://github.com/user-attachments/assets/966dddaa-a8a8-4499-889c-7306b064c703" />
-
 ---
 
 ### 🚀 How to Run It (on PyCharm) 
