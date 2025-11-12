@@ -68,10 +68,6 @@ Newton's method is an efficient optimization algorithm that uses both the gradie
 4. Stops when convergence is reached or when the Hessian is not invertible
 
 
----
-
-
-
 ### Interpretation of $\delta$ 🤔
 
 The appropriate definition of the above type is as:
@@ -90,8 +86,6 @@ $$
 It determines how far and in which direction to move at each iteration.
 
 
----
-
 ### Visual Comparison between Newton's Method and Gradient Descent 📐🔍
 
 ![Newton vs Gradient Descent](https://github.com/user-attachments/assets/74673bc1-f649-4962-accd-e3c094611bcd)
@@ -103,9 +97,8 @@ It determines how far and in which direction to move at each iteration.
 - Install the `sympy` and `numpy` libraries  
 - Run the Python script implementing the algorithm
 
----
 
-### Tools Used 🧠
+### Tool Used 🧠
 
 - ChatGPT AI Tool for assistance and code optimization
 
