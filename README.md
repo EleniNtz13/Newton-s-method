@@ -1,9 +1,9 @@
-## Newton's Method for Two Variables (Python) 📈👩🏻‍💻
+## 📈👩🏻‍💻 Newton's Method for Two Variables (Python)
 
 This project implements **Newton's Method** for optimizing functions with two variables using Python.
 
 
-### What It Calculates 🧮
+### 🧮 What It Calculates 
 
 - The **gradient** $$\nabla f$$ (vector of first derivatives) is a vector indicating the direction of the steepest increase of the function. In Newton’s method, the gradient indicates where the function increases or decreases faster. 
   
@@ -41,14 +41,14 @@ $$
 
 - Automatic classification of the critical point as a **local minimum**, **local maximum**, or **saddle point**
 
-#### Therefore, Newton’s method uses: 😉
+#### 😉 Therefore, Newton’s method uses: 
  1) The Gradient to determine the optimization direction
  2) The Hessian to understand curvature
  3) The Hessian determinant to ensure invertibility and fast convergence
 
 ---
 
-### How Newton's Method Works 💡
+### 💡 How Newton's Method Works 
 
 Newton's method is an efficient optimization algorithm that uses both the gradient and the Hessian matrix of a function to find critical points where the gradient equals zero. The steps for solving Newton's method:
 
@@ -68,7 +68,7 @@ Newton's method is an efficient optimization algorithm that uses both the gradie
 4. Stops when convergence is reached or when the Hessian is not invertible
 
 
-### Interpretation of $\delta$ 🤔
+### 🤔 Interpretation of $\delta$ 
 
 The appropriate definition of the above type is as:
 
@@ -86,7 +86,7 @@ $$
 It determines how far and in which direction to move at each iteration.
 
 
-### Visual Comparison between Newton's Method and Gradient Descent 📐🔍
+### 📐🔍 Visual Comparison between Newton's Method and Gradient Descent
 
 ![Newton vs Gradient Descent](https://github.com/user-attachments/assets/74673bc1-f649-4962-accd-e3c094611bcd)
 
@@ -98,13 +98,13 @@ It determines how far and in which direction to move at each iteration.
 - Run the Python script implementing the algorithm
 
 
-### Tool Used 🧠
+### 🧠 Tool Used 
 
 - ChatGPT AI Tool for assistance and code optimization
 
 ---
 
-### What I Learned 🎯
+### 🎯 What I Learned 
 
 - Symbolic differentiation and Hessian computation using SymPy  
 - Matrix inversion and determinant checking with NumPy  
