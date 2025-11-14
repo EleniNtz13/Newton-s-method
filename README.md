@@ -1,6 +1,6 @@
 ## 📈👩🏻‍💻 Newton's Method for Two Variables (Python)
 
-This project implements **Newton's Method** for optimizing functions with two variables using Python.
+This project implements **Newton's Method** for optimizing functions with two variables using Python and was conducted as part of the university course **"Introduction to Linear and Nonlinear Optimization"** within the curriculum of the Department of Digital Systems in Sparta.
 
 
 ### 🧮 What It Calculates 
