@@ -85,8 +85,7 @@ $$
 
 It determines how far and in which direction to move at each iteration.
 
-
-
+---
 
 ### 🖥️ What the Program Displays to the User
 
