@@ -100,7 +100,7 @@ During execution, the program provides detailed and structured output that allow
 
   	- The function 𝑓(𝑥,𝑦)
 
-  	- Initial values 𝑥0 and 𝑦0
+  	- Initial values $𝑥0$ and $𝑦0$
 
 
 2️⃣ Display of Symbolic Computations
@@ -130,7 +130,7 @@ For each iteration, the following are displayed:
 
 - Correction vector 𝛿
 
-- Updated point 𝑥𝑛+1
+- Updated point $𝑥𝑛+1$
 
 4️⃣ Hessian Invertibility Check
 
@@ -164,11 +164,13 @@ At the end, the program displays:
 
 Using second-derivative criteria, the program automatically classifies the critical point:
 
-- ➡️ The point is a local minimum
+	➡️ The point is a local minimum
 or
-- ⬅️ The point is a local maximum
+	⬅️ The point is a local maximum
 or
-- ↔️ The point is a saddle point.
+	↔️ The point is a saddle point.
+
+
 
 ### 📐🔍 Visual Comparison between Newton's Method and Gradient Descent
 
