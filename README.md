@@ -2,7 +2,46 @@
 
 This project implements **Newton's Method** for optimizing functions with two variables using Python and was conducted as part of the university course **"Introduction to Linear and Nonlinear Optimization"** within the curriculum of the Department of Digital Systems in Sparta.
 
+---
 
+### 💡 How Newton's Method Works 
+
+Newton's method is an efficient optimization algorithm that uses both the gradient and the Hessian matrix of a function to find critical points where the gradient equals zero. The steps for solving Newton's method:
+
+1. Takes a function $$f(x,y)$$ as input
+2. Computes the gradient and Hessian symbolically using sympy
+3. Starting from the initial point $$\mathbf{x}_n$$, the numerical update is performed as:
+
+  $$
+  \mathbf{x}_{n+1} = \mathbf{x}_n - H^{-1} \cdot \nabla f
+  $$
+
+  where,
+
+- $H^-1$ = the inverse of the Hessian matrix (matrix of second derivatives)  
+- $\nabla f$ = gradient (vector of first derivatives) 
+
+4. Stops when convergence is reached or when the Hessian is not invertible
+
+
+### 🤔 Interpretation of $\delta$ 
+
+The appropriate definition of the above type is as:
+
+$$
+\mathbf{x}_{n+1} = \mathbf{x}_n - \delta
+$$
+
+where, the correction vector $\delta$ is defined as:
+
+$$
+\delta = H^{-1} \cdot \nabla f
+$$
+
+
+It determines how far and in which direction to move at each iteration.
+
+---
 ### 🧮 What It Calculates 
 
 - The **gradient** $$\nabla f$$ (vector of first derivatives) is a vector indicating the direction of the steepest increase of the function. In Newton’s method, the gradient indicates where the function increases or decreases faster. 
@@ -48,42 +87,7 @@ $$
 
 ---
 
-### 💡 How Newton's Method Works 
 
-Newton's method is an efficient optimization algorithm that uses both the gradient and the Hessian matrix of a function to find critical points where the gradient equals zero. The steps for solving Newton's method:
-
-1. Takes a function $$f(x,y)$$ as input
-2. Computes the gradient and Hessian symbolically using sympy
-3. Starting from the initial point $$\mathbf{x}_n$$, the numerical update is performed as:
-
-  $$
-  \mathbf{x}_{n+1} = \mathbf{x}_n - H^{-1} \cdot \nabla f
-  $$
-
-  where,
-
-- $H^-1$ = the inverse of the Hessian matrix (matrix of second derivatives)  
-- $\nabla f$ = gradient (vector of first derivatives) 
-
-4. Stops when convergence is reached or when the Hessian is not invertible
-
-
-### 🤔 Interpretation of $\delta$ 
-
-The appropriate definition of the above type is as:
-
-$$
-\mathbf{x}_{n+1} = \mathbf{x}_n - \delta
-$$
-
-where, the correction vector $\delta$ is defined as:
-
-$$
-\delta = H^{-1} \cdot \nabla f
-$$
-
-
-It determines how far and in which direction to move at each iteration.
 
 ---
 
