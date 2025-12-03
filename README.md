@@ -164,7 +164,7 @@ or
 or
 - The point is a saddle point
 
-
+---
 
 ### 📐🔍 Visual Comparison between Newton's Method and Gradient Descent
 
