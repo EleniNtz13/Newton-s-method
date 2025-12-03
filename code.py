@@ -89,7 +89,7 @@ hess_final = sp.Matrix(hessian_f.subs({x: xn[0], y: xn[1]})) # Creates a symboli
 det_final = hess_final.det() # Computes the determinant of the final Hessian
 f_xx_final = sp.diff(f, x, x).subs({x: xn[0], y: xn[1]}) # Computes the second partial derivative with respect to 𝑥 at the final point
 
-# Prints the determinant and second derivative to help classify the critical point (e.g., minimum, maximum, saddle).
+# Prints the determinant and second derivative to help classify the critical point (e.g., minimum, maximum, saddle)
 print(f"\nDeterminant at final point: det(H) = {det_final}") # det_final: Determinant of the Hessian matrix at the final point
 print(f"f_xx at final point: {f_xx_final}") # f_xx_final: Second partial derivative of 𝑓 with respect to 𝑥, evaluated at the final point
 
@@ -116,5 +116,6 @@ if not converged:
     print("❗ The method did not converge within the iteration limit.")
 
 # End of code
+
 
 
