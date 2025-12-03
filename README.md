@@ -124,7 +124,7 @@ For each iteration, the following are displayed:
 
 - Correction vector 𝛿
 
-- Updated point $𝑥__n+1$
+- Updated point $𝑥__n$
 
 4️⃣ Hessian Invertibility Check
 
