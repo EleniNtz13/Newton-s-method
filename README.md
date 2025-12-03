@@ -91,13 +91,13 @@ During execution, the program provides detailed and structured output that allow
 
 1️⃣ Introductory Messages & User Input:
 
-A welcome message explaining that the algorithm implements Newton’s Method.
+- A welcome message explaining that the algorithm implements Newton’s Method.
 
-Prompts the user to enter:
+- Prompts the user to enter:
 
-  - The function 𝑓(𝑥,𝑦)
+  	- The function 𝑓(𝑥,𝑦)
 
-  - Initial values 𝑥0 and 𝑦0
+  	- Initial values 𝑥0 and 𝑦0
 	​
 
 
