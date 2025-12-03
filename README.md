@@ -87,6 +87,7 @@ It determines how far and in which direction to move at each iteration.
 
 
 
+
 ### 🖥️ What the Program Displays to the User
 
 During execution, the program provides detailed and structured output that allows the user to follow each stage of Newton’s Method. Specifically:
@@ -101,7 +102,7 @@ During execution, the program provides detailed and structured output that allow
 
   	- Initial values 𝑥0 and 𝑦0
 
-	​
+
 2️⃣ Display of Symbolic Computations
 
 Once the user inputs the function and initial point, the program prints:
@@ -119,7 +120,7 @@ Once the user inputs the function and initial point, the program prints:
 
 For each iteration, the following are displayed:
 
-- Current point (𝑥𝑛,𝑦𝑛)(xn,yn)
+- Current point $(𝑥𝑛,𝑦𝑛)$
 
 - Numerical gradient at that point
 
