@@ -124,7 +124,7 @@ For each iteration, the following are displayed:
 
 - Correction vector 𝛿
 
-- Updated point $𝑥_(𝑛+1)$
+- Updated point $𝑥__n+1$
 
 4️⃣ Hessian Invertibility Check
 
@@ -158,9 +158,9 @@ At the end, the program displays:
 
 Using second-derivative criteria, the program automatically classifies the critical point:
 
-- The point is a local minimum
+- The point is a local minimum,
 or
-- The point is a local maximum
+- The point is a local maximum,
 or
 - The point is a saddle point
 
