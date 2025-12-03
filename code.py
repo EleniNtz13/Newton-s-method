@@ -117,5 +117,3 @@ if not converged:
 
 # End of code
 
-
-
