@@ -124,7 +124,7 @@ For each iteration, the following are displayed:
 
 - Correction vector 𝛿
 
-- Updated point $𝑥_𝑛+1$
+- Updated point $𝑥_(𝑛+1)$
 
 4️⃣ Hessian Invertibility Check
 
@@ -152,7 +152,7 @@ At the end, the program displays:
 
 - Determinant of the Hessian at the final point
 
-- Second derivative 𝑓𝑥𝑥 at the final point
+- Second derivative at the final point
 
 7️⃣ Classification of the Critical Point
 
