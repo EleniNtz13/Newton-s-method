@@ -84,7 +84,7 @@ It determines how far and in which direction to move at each iteration.
 
 ### 🖥️ What the Program Displays to the User
 
-During execution, the program provides detailed and structured output that allows the user to follow each stage of Newton’s Method. Specifically:
+During execution, the program provides detailed and structured output that allows the user to follow each stage of Newton’s Method.Specifically:
 
 1️⃣ Introductory Messages & User Input:
 
