@@ -120,7 +120,7 @@ Once the user inputs the function and initial point, the program prints:
 
 For each iteration, the following are displayed:
 
-- Current point $(𝑥𝑛,𝑦𝑛)$
+- Current point $(𝑥_𝑛,𝑦_𝑛)$
 
 - Numerical gradient at that point
 
@@ -130,7 +130,7 @@ For each iteration, the following are displayed:
 
 - Correction vector 𝛿
 
-- Updated point $𝑥𝑛+1$
+- Updated point $𝑥_𝑛+1$
 
 4️⃣ Hessian Invertibility Check
 
@@ -168,7 +168,7 @@ Using second-derivative criteria, the program automatically classifies the criti
 or
 	⬅️ The point is a local maximum
 or
-	↔️ The point is a saddle point.
+	↔️ The point is a saddle point
 
 
 
