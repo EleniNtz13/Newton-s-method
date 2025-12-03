@@ -100,7 +100,7 @@ During execution, the program provides detailed and structured output that allow
 
   	- The function 𝑓(𝑥,𝑦)
 
-  	- Initial values $𝑥0$ and $𝑦0$
+  	- Initial values $𝑥_0$ and $𝑦_0$
 
 
 2️⃣ Display of Symbolic Computations
