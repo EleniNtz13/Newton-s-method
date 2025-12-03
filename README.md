@@ -125,9 +125,7 @@ For each iteration, the following are displayed:
 - Correction vector 𝛿
 
 - Updated point $𝑥_n+1$
-$$
-  \mathbf{x}_{n+1}
-$$
+  $\mathbf{x}_{n+1}$
 
 4️⃣ Hessian Invertibility Check
 
