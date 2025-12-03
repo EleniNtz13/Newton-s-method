@@ -83,13 +83,6 @@ It determines how far and in which direction to move at each iteration.
 
 ---
 
-#### 😉 Therefore, Newton’s method uses: 
- 1) The Gradient to determine the optimization direction
- 2) The Hessian to understand curvature
- 3) The Hessian determinant to ensure invertibility and fast convergence
-
----
-
 ### 🖥️ What the Program Displays to the User
 
 During execution, the program provides detailed and structured output that allows the user to follow each stage of Newton’s Method. Specifically:
@@ -177,6 +170,11 @@ or
 ### 📐🔍 Visual Comparison between Newton's Method and Gradient Descent
 
 ![Newton vs Gradient Descent](https://github.com/user-attachments/assets/74673bc1-f649-4962-accd-e3c094611bcd)
+
+#### 😉 Therefore, Newton’s method uses: 
+ 1) The Gradient to determine the optimization direction
+ 2) The Hessian to understand curvature
+ 3) The Hessian determinant to ensure invertibility and fast convergence
 
 ---
 
