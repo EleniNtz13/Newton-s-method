@@ -85,6 +85,21 @@ $$
 
 It determines how far and in which direction to move at each iteration.
 
+### 🖥️ What the Program Displays to the User
+
+During execution, the program provides detailed and structured output that allows the user to follow each stage of Newton’s Method. Specifically:
+
+1️⃣ Introductory Messages & User Input:
+
+A welcome message explaining that the algorithm implements Newton’s Method.
+
+Prompts the user to enter:
+
+  - The function 𝑓(𝑥,𝑦)
+
+  - Initial values 𝑥0 and 𝑦0
+	​
+
 
 ### 📐🔍 Visual Comparison between Newton's Method and Gradient Descent
 
