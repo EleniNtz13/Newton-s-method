@@ -164,11 +164,11 @@ At the end, the program displays:
 
 Using second-derivative criteria, the program automatically classifies the critical point:
 
-➡️ The point is a local minimum
+- The point is a local minimum
 or
-⬅️ The point is a local maximum
+- The point is a local maximum
 or
-↔️ The point is a saddle point
+- The point is a saddle point
 
 
 
