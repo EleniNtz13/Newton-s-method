@@ -85,6 +85,8 @@ $$
 
 It determines how far and in which direction to move at each iteration.
 
+
+
 ### 🖥️ What the Program Displays to the User
 
 During execution, the program provides detailed and structured output that allows the user to follow each stage of Newton’s Method. Specifically:
@@ -98,8 +100,74 @@ During execution, the program provides detailed and structured output that allow
   	- The function 𝑓(𝑥,𝑦)
 
   	- Initial values 𝑥0 and 𝑦0
-	​
 
+	​
+2️⃣ Display of Symbolic Computations
+
+Once the user inputs the function and initial point, the program prints:
+
+- The original function 𝑓(𝑥,𝑦)
+
+- The value of the function at the initial point
+
+- The gradient in symbolic form
+
+- The Hessian matrix, formatted as a readable matrix
+
+
+3️⃣ Iteration Output
+
+For each iteration, the following are displayed:
+
+- Current point (𝑥𝑛,𝑦𝑛)(xn,yn)
+
+- Numerical gradient at that point
+
+- Numerical Hessian matrix
+
+- Determinant of the Hessian (for invertibility check)
+
+- Correction vector 𝛿
+
+- Updated point 𝑥𝑛+1
+
+4️⃣ Hessian Invertibility Check
+
+If the determinant equals zero, the algorithm stops.
+
+5️⃣ Convergence Message
+
+- If the step size becomes smaller than the tolerance:
+
+	- ✅ Convergence achieved.
+
+
+- If convergence is not achieved within the iteration limit:
+
+	- ❗ The method did not converge within the iteration limit.​
+
+
+6️⃣ Final Results
+
+At the end, the program displays:
+
+- Final point of the iteration
+
+- Total number of iterations
+
+- Determinant of the Hessian at the final point
+
+- Second derivative 𝑓𝑥𝑥 at the final point
+
+7️⃣ Classification of the Critical Point
+
+Using second-derivative criteria, the program automatically classifies the critical point:
+
+- ➡️ The point is a local minimum
+or
+- ⬅️ The point is a local maximum
+or
+- ↔️ The point is a saddle point.
 
 ### 📐🔍 Visual Comparison between Newton's Method and Gradient Descent
 
